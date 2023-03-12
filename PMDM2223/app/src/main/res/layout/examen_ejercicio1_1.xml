@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EVA1.examen1.Ejercicio1">
+
+    <EditText
+        android:id="@+id/examenNum1"
+        android:layout_width="88dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="N1"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toStartOf="@+id/examenNum2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/examenNum2"
+        android:layout_width="88dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="N2"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/examenNum1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/examenCalcular"
+        android:layout_width="253dp"
+        android:layout_height="60dp"
+        android:text="@string/calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="345dp"
+        android:layout_height="192dp"
+        app:layout_constraintBottom_toTopOf="@+id/examenCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/examenNum1">
+
+        <RadioButton
+            android:id="@+id/examenSuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/suma" />
+
+        <RadioButton
+            android:id="@+id/examenResta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resta" />
+
+        <RadioButton
+            android:id="@+id/examenMulti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplicacion" />
+
+        <RadioButton
+            android:id="@+id/examenDiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/division" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

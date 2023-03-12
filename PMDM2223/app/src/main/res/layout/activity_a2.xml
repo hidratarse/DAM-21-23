@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EVA1.testLanzarEnviar.A2">
+
+    <TextView
+        android:id="@+id/textoA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar mensaje A3"
+        app:layout_constraintBottom_toTopOf="@+id/escribirNombre2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/escribirNombre2"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/bvuelta3"
+        app:layout_constraintEnd_toStartOf="@+id/enviarA3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoA2" />
+
+    <Button
+        android:id="@+id/enviarA3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="EnviarA2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/escribirNombre2"
+        app:layout_constraintTop_toTopOf="@+id/escribirNombre2" />
+
+    <Button
+        android:id="@+id/bvuelta3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="VOLVER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bA1Nueva2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/escribirNombre2" />
+
+    <Button
+        android:id="@+id/bA1Nueva2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="NUEVA A1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bvuelta3"
+        app:layout_constraintTop_toBottomOf="@+id/escribirNombre2" />
+
+    <Button
+        android:id="@+id/breverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reversa el texto
+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bvuelta3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

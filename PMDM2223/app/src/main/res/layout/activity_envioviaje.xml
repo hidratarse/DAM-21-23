@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EVA1.txi.EnvioViaje">
+
+
+    <EditText
+        android:id="@+id/fechaVuelta"
+        android:layout_width="156dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Fecha de la vuelta."
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/vNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/horaVuelta"
+        app:layout_constraintTop_toBottomOf="@+id/fechaIda" />
+
+    <EditText
+        android:id="@+id/fechaIda"
+        android:layout_width="157dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="date"
+        android:focusable="false"
+        android:clickable="true"
+        android:maxLines="1"
+        android:text="Fecha de la ida."
+        app:layout_constraintBottom_toTopOf="@+id/fechaVuelta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/horaIda"
+        app:layout_constraintTop_toBottomOf="@+id/ciudadesDestino" />
+
+    <EditText
+        android:id="@+id/horaIda"
+        android:layout_width="157dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Hora de la ida."
+        app:layout_constraintBottom_toTopOf="@+id/horaVuelta"
+        app:layout_constraintEnd_toStartOf="@+id/fechaIda"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ciudadesOrigen" />
+
+    <Spinner
+        android:id="@+id/ciudadesOrigen"
+        android:layout_width="119dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="49dp"
+        android:entries="@array/array_ciudades"
+        app:layout_constraintBottom_toTopOf="@+id/horaIda"
+        app:layout_constraintEnd_toStartOf="@+id/ciudadesDestino"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Spinner
+        android:id="@+id/ciudadesDestino"
+        android:layout_width="119dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="47dp"
+        android:entries="@array/array_ciudades"
+        app:layout_constraintBottom_toTopOf="@+id/fechaIda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ciudadesOrigen"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciudades vuelta"
+        app:layout_constraintBottom_toTopOf="@+id/ciudadesDestino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switchIdaVuelta"
+        app:layout_constraintTop_toBottomOf="@+id/switchVuelta" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciudades ida"
+        app:layout_constraintBottom_toTopOf="@+id/ciudadesOrigen"
+        app:layout_constraintEnd_toStartOf="@+id/switchIdaVuelta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchIda" />
+
+    <Switch
+        android:id="@+id/switchIdaVuelta"
+        android:layout_width="61dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="79dp"
+        android:checked="false"
+        app:layout_constraintBottom_toTopOf="@+id/ciudadesOrigen"
+        app:layout_constraintEnd_toStartOf="@+id/switchVuelta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/switchIda"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/switchIda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ida"
+        app:layout_constraintBottom_toBottomOf="@+id/switchIdaVuelta"
+        app:layout_constraintEnd_toStartOf="@+id/switchIdaVuelta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/switchIdaVuelta" />
+
+    <TextView
+        android:id="@+id/switchVuelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ida y vuelta."
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/switchIdaVuelta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switchIdaVuelta"
+        app:layout_constraintTop_toTopOf="@+id/switchIdaVuelta" />
+
+    <EditText
+        android:id="@+id/horaVuelta"
+        android:layout_width="156dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Hora de la vuelta."
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/vNombre"
+        app:layout_constraintEnd_toStartOf="@+id/fechaVuelta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horaIda" />
+
+    <EditText
+        android:id="@+id/vNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/vDireccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fechaVuelta" />
+
+    <EditText
+        android:id="@+id/vDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Direccón de recogida"
+        app:layout_constraintBottom_toTopOf="@+id/vDNI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vNombre" />
+
+    <EditText
+        android:id="@+id/vDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="DNI"
+        app:layout_constraintBottom_toTopOf="@+id/envioViaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vDireccion" />
+
+    <Button
+        android:id="@+id/envioViaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vDNI" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

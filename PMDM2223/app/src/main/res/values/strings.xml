@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PMDM-2223</string>
+    <string name="reset">RESET</string>
+    <string name="suma">SUMA</string>
+    <string name="resta">RESTA</string>
+    <string name="multiplicacion">MUTLIPLICACION</string>
+    <string name="division">DIVISION</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="cero">0</string>
+    <string name="result">RESULTADO</string>
+    <string name="volver">VOLVER</string>
+</resources>

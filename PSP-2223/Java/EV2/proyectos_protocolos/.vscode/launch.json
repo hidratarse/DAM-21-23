@@ -1,0 +1,177 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch MulticastSend",
+            "request": "launch",
+            "mainClass": "ejemplo.MulticastSend",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteTCP",
+            "request": "launch",
+            "mainClass": "ejemplo.TCP.ClienteTCP",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch HolaServer",
+            "request": "launch",
+            "mainClass": "ejemplo.TCP.HolaServer",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch BroadcastTest",
+            "request": "launch",
+            "mainClass": "ejemplo.UDP.UDPBroadcast.BroadcastTest",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteUDPBroadcast",
+            "request": "launch",
+            "mainClass": "ejemplo.UDP.UDPBroadcast.ClienteUDPBroadcast",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteUDPMulticast",
+            "request": "launch",
+            "mainClass": "ejemplo.UDP.UDPMulticast.ClienteUDPMulticast",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServidorUDPMulticast",
+            "request": "launch",
+            "mainClass": "ejemplo.UDP.UDPMulticast.ServidorUDPMulticast",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteUDP",
+            "request": "launch",
+            "mainClass": "ejemplo.UDP.UDPNormal.ClienteUDP",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServerUDP",
+            "request": "launch",
+            "mainClass": "ejemplo.UDP.UDPNormal.ServerUDP",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteJuego",
+            "request": "launch",
+            "mainClass": "ejercicios.Ahorcado.ClienteJuego",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch PruebaAhorcado",
+            "request": "launch",
+            "mainClass": "ejercicios.Ahorcado.PruebaAhorcado",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServidorJuego",
+            "request": "launch",
+            "mainClass": "ejercicios.Ahorcado.ServidorJuego",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteJuego(1)",
+            "request": "launch",
+            "mainClass": "ejercicios.AhorcadoUDP.ClienteJuego",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServidorJuego(1)",
+            "request": "launch",
+            "mainClass": "ejercicios.AhorcadoUDP.ServidorJuego",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cliente",
+            "request": "launch",
+            "mainClass": "ejercicios.Cliente_Servidor.Cliente",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch Server",
+            "request": "launch",
+            "mainClass": "ejercicios.Cliente_Servidor.Server",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch CambiarIP",
+            "request": "launch",
+            "mainClass": "ejercicios.DNS.CambiarIP",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteUDP(1)",
+            "request": "launch",
+            "mainClass": "ejercicios.UDP.ClienteUDP",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServidorBroadcast",
+            "request": "launch",
+            "mainClass": "ejercicios.UDP.ServidorBroadcast",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cliente(1)",
+            "request": "launch",
+            "mainClass": "ejercicios.chef_gpt.Cliente",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch DynamicIPUpdaterServer",
+            "request": "launch",
+            "mainClass": "ejercicios.chef_gpt.DynamicIPUpdaterServer",
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch CifradoCesar3",
+            "request": "launch",
+            "mainClass": "ejercicios.cifrado.CifradoCesar3",
+            "args": ["pardiez"],
+            "projectName": "proyectos_protocolos_273eaf81"
+        },
+        {
+            "type": "java",
+            "name": "Launch DescifradoCesar3",
+            "request": "launch",
+            "mainClass": "ejercicios.cifrado.DescifradoCesar3",
+            "args": ["sduglhc"],
+            "projectName": "proyectos_protocolos_273eaf81"
+        }
+    ]
+}

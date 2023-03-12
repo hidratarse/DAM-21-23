@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: server
+    depends_on:
+      - db
+    volumes:
+      - ./htdocs:/var/www/html
+    ports:
+      - 8000:80
+  db:
+    container_name: SGE_BBDD
+    image: mariadb
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=yes
+      - MARIADB_USER=root
+    ports:
+      - "63033:3306"

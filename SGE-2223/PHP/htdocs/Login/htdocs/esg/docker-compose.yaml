@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  phpmyadmin:
+    container_name: BBDD
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+  db:
+    container_name: db
+    image: mariadb
+    restart: always
+    depends_on:
+      - "phpmyadmin"
+    environment:
+        - MYSQL_ROOT_PASSWORD=yes
+        - MARIADB_USER=root
+    ports:
+      - "63033:3306"
+  server:
+    image: php:8.0-apache
+    ports:
+      - '8090:80'
+    volumes:
+      - './htdocs:/var/www/html/'
+    depends_on:
+      - db

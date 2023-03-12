@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recibeNOM"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EVA1.txi.ReciboViaje">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:text="Fecha de Ida"
+        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintEnd_toStartOf="@+id/recibeFida"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/recibeDNI"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/reciberDir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/recibeNombre" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:text="Dirección de recogida"
+        app:layout_constraintBottom_toTopOf="@+id/textView31"
+        app:layout_constraintEnd_toStartOf="@+id/reciberDir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:text="Ciudad de origen"
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintEnd_toStartOf="@+id/recibeCiuO"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/recibeCiuO"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/recibeFida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/reciberDir" />
+
+    <TextView
+        android:id="@+id/recibeFida"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/recibeHida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/recibeCiuO" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:text="Hora ida"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintEnd_toStartOf="@+id/recibeHida"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/recibeHida"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/recibeCiuD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/recibeFida" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:text="Ciudad destino"
+        app:layout_constraintBottom_toTopOf="@+id/textoFecha"
+        app:layout_constraintEnd_toStartOf="@+id/recibeCiuD"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/recibeCiuD"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/recibeFvuelta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/recibeHida" />
+
+    <TextView
+        android:id="@+id/textoFecha"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:text="Fecha vuelta"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textoHora"
+        app:layout_constraintEnd_toStartOf="@+id/recibeFvuelta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:text="DNI"
+        app:layout_constraintBottom_toTopOf="@+id/textView30"
+        app:layout_constraintEnd_toStartOf="@+id/recibeDNI"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VERRRRR" />
+
+    <TextView
+        android:id="@+id/textoHora"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:text="Hora vuelta"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recibeHvuelta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoFecha" />
+
+    <TextView
+        android:id="@+id/recibeHvuelta"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textoHora"
+        app:layout_constraintTop_toBottomOf="@+id/recibeFvuelta" />
+
+    <TextView
+        android:id="@+id/reciberDir"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/recibeCiuO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/recibeDNI" />
+
+    <TextView
+        android:id="@+id/VERRRRR"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:text="Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/textView33"
+        app:layout_constraintEnd_toStartOf="@+id/recibeNombre"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recibeNombre"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/recibeDNI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/VERRRRR"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recibeFvuelta"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/recibeHvuelta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textoFecha"
+        app:layout_constraintTop_toBottomOf="@+id/recibeCiuD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

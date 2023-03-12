@@ -1,0 +1,3 @@
+USERNAME=avalonic
+PASSWORD=
+DOMAIN=nofuncaesto.crabdance.com

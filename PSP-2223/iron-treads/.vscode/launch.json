@@ -1,0 +1,275 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteJuego",
+            "request": "launch",
+            "mainClass": "com.hidratarse.clase.Ahorcado.ClienteJuego",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch PruebaAhorcado",
+            "request": "launch",
+            "mainClass": "com.hidratarse.clase.Ahorcado.PruebaAhorcado",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServidorJuego",
+            "request": "launch",
+            "mainClass": "com.hidratarse.clase.Ahorcado.ServidorJuego",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cliente",
+            "request": "launch",
+            "mainClass": "com.hidratarse.clase.Cliente_Servidor.Cliente",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch Server",
+            "request": "launch",
+            "mainClass": "com.hidratarse.clase.Cliente_Servidor.Server",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch CambiarIP",
+            "request": "launch",
+            "mainClass": "com.hidratarse.clase.DNS.CambiarIP",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteUDP",
+            "request": "launch",
+            "mainClass": "com.hidratarse.clase.UDP.ClienteUDP",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServidorBroadcast",
+            "request": "launch",
+            "mainClass": "com.hidratarse.clase.UDP.ServidorBroadcast",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cliente(1)",
+            "request": "launch",
+            "mainClass": "com.hidratarse.clase.chef_gpt.Cliente",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch DynamicIPUpdaterServer",
+            "request": "launch",
+            "mainClass": "com.hidratarse.clase.chef_gpt.DynamicIPUpdaterServer",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch CifradoCesar3",
+            "request": "launch",
+            "mainClass": "com.hidratarse.clase.cifrado.CifradoCesar3",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch DescifradoCesar3",
+            "request": "launch",
+            "mainClass": "com.hidratarse.clase.cifrado.DescifradoCesar3",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClientePrimosTCP",
+            "request": "launch",
+            "mainClass": "com.hidratarse.comunicacion.ClientePrimosTCP",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteTCPMultiHilo",
+            "request": "launch",
+            "mainClass": "com.hidratarse.comunicacion.ClienteTCPMultiHilo",
+            "args": ["127.0.01","8000"],
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch GUITCP",
+            "request": "launch",
+            "mainClass": "com.hidratarse.comunicacion.GUITCP",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch GUIUDP",
+            "request": "launch",
+            "mainClass": "com.hidratarse.comunicacion.GUIUDP",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServerPrimosTCP",
+            "request": "launch",
+            "mainClass": "com.hidratarse.comunicacion.ServerPrimosTCP",
+            "args": ["8000"],
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServerPrimosUDP",
+            "request": "launch",
+            "mainClass": "com.hidratarse.comunicacion.ServerPrimosUDP",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServidorBasicoUDP",
+            "request": "launch",
+            "mainClass": "com.hidratarse.comunicacion.ServidorBasicoUDP",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServidorUDPBroadcast",
+            "request": "launch",
+            "mainClass": "com.hidratarse.comunicacion.ServidorUDPBroadcast",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteTCP",
+            "request": "launch",
+            "mainClass": "com.hidratarse.ejemplos.TCP.ClienteTCP",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch HolaServer",
+            "request": "launch",
+            "mainClass": "com.hidratarse.ejemplos.TCP.HolaServer",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch BroadcastTest",
+            "request": "launch",
+            "mainClass": "com.hidratarse.ejemplos.UDP.UDPBroadcast.BroadcastTest",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteUDPBroadcast",
+            "request": "launch",
+            "mainClass": "com.hidratarse.ejemplos.UDP.UDPBroadcast.ClienteUDPBroadcast",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteUDPMulticast",
+            "request": "launch",
+            "mainClass": "com.hidratarse.ejemplos.UDP.UDPMulticast.ClienteUDPMulticast",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServidorUDPMulticast",
+            "request": "launch",
+            "mainClass": "com.hidratarse.ejemplos.UDP.UDPMulticast.ServidorUDPMulticast",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteUDP(1)",
+            "request": "launch",
+            "mainClass": "com.hidratarse.ejemplos.UDP.UDPNormal.ClienteUDP",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServerUDP",
+            "request": "launch",
+            "mainClass": "com.hidratarse.ejemplos.UDP.UDPNormal.ServerUDP",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch CifradoCesar",
+            "request": "launch",
+            "mainClass": "com.hidratarse.seguridad.CifradoCesar",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch CifradoPlus",
+            "request": "launch",
+            "mainClass": "com.hidratarse.seguridad.CifradoPlus",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch DescifradoCesar",
+            "request": "launch",
+            "mainClass": "com.hidratarse.seguridad.DescifradoCesar",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch DescifradoPlus",
+            "request": "launch",
+            "mainClass": "com.hidratarse.seguridad.DescifradoPlus",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch HTMLSender",
+            "request": "launch",
+            "mainClass": "com.hidratarse.seguridad.HTMLSender",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashChecker",
+            "request": "launch",
+            "mainClass": "com.hidratarse.seguridad.HashChecker",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch SSLCookieBakery",
+            "request": "launch",
+            "mainClass": "com.hidratarse.seguridad.SSLCookieBakery",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch CuadradoPorCorreo",
+            "request": "launch",
+            "mainClass": "com.hidratarse.servicios.CuadradoPorCorreo",
+            "projectName": "iron-treads"
+        },
+        {
+            "type": "java",
+            "name": "Launch DAMHttpServer",
+            "request": "launch",
+            "mainClass": "com.hidratarse.servicios.DAMHttpServer",
+            "projectName": "iron-treads"
+        }
+    ]
+}

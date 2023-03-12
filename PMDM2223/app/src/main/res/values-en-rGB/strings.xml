@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PMDM-2223</string>
+    <string name="reset">reset</string>
+    <string name="suma">add</string>
+    <string name="resta">substract</string>
+    <string name="multiplicacion">multiply</string>
+    <string name="division">divide</string>
+    <string name="cero">zero</string>
+    <string name="calcular">calculate</string>
+    <string name="result">result</string>
+    <string name="volver">back</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EVA2.autentificacion.AuthDetalle">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="NUEVA PREGUNTA"
+        android:textColor="#0B0B0B"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/auth_detalle_pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Pregunta"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/auth_detalle_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Fecha"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/auth_fecha_actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="FECHA ACTUAL" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/auth_detalle_añadir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir" />
+
+    <Button
+        android:id="@+id/auth_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="volver" />
+</LinearLayout>
