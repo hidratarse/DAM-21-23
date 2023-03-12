@@ -1,0 +1,21 @@
+1er paso - Servidor Linux
+
+sudo apt-get install python3-pip
+
+pip install fastapi
+pip install "unicorn[standard]"
+
+mkdir(directorio)->DirectorioAPI
+cd (directorio)
+
+nano (codigo)
+
+@app.(codigo HTTP)(POST/GET/UPDATE)
+
+nano ~/.bashrc
+//al final de archivo
+PATH = $PATH:~/.local/bin
+
+uvicorn main:app --reload (--host 0.0.0.0)
+
+url
